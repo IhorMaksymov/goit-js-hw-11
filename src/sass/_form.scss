@@ -1,0 +1,36 @@
+.search-form {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #81227a, #429aee);
+    border-radius: 4px;
+}
+
+.search-form :is(input, button) {
+    color: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.search-input {
+    width: 0;
+    transition: width .5s;
+}
+
+.search-btn {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.search-form:hover input {
+    width: 200px;
+}
+
+::placeholder {
+    color: inherit;
+}
